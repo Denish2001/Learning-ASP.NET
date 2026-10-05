@@ -1,0 +1,29 @@
+GET http://localhost:5277/games
+
+###
+GET http://localhost:5277/games/30
+
+###
+POST http://localhost:5277/games
+Content-Type: application/json
+
+{
+    "Name": "Albion Warrior",
+    "Genre": "RPG",
+    "Price": 60.545,
+    "ReleaseDate": "2026-01-01"
+}
+
+###
+PUT http://localhost:5277/games/2
+Content-Type: application/json
+
+{
+    "Name": "Temple-Run",
+    "Genre": "RPG",
+    "Price": 0.0,
+    "ReleaseDate": "2026-01-01"
+}
+
+###
+DELETE http://localhost:5277/games/1
